@@ -8,8 +8,12 @@ import portada from './assets/img/portada.png'
 
 function App() {
 
-  const [location, setLocation] = useState('3');
+  let value = Math.floor(Math.random()*126 - 1); 
+  console.log(value)
+  const [location, setLocation] = useState(value);
   const [data, setData] = useState({});
+
+  
 
   useEffect(()=> {
     console.log(location)
