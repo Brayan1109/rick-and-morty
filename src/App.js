@@ -12,6 +12,7 @@ function App() {
   const [data, setData] = useState({});
 
   useEffect(()=> {
+    console.log(location)
     getByType(location).then(req => {
       setData(req.data)
     })

@@ -31,7 +31,7 @@ function ResidentContainer({residents}){
         <div className="residents-container-sup">
             <div className="container-resident-all">
                 
-                {(!residents) ? <img src={jarLoading} alt='loading'/> 
+                {(!residents) ? <img className="loader" src={jarLoading} alt='loading'/> 
                                 : (residents.length !==0 ) ? sliceGroupResidents(residents)[0][page].map((e, index) => {
                                                         return <ResidentInfo key={index} infoResident={e} /> })
                 
@@ -40,15 +40,9 @@ function ResidentContainer({residents}){
             </div>
 
             <div className="pagination">
-
-                {/* {(residents) ? (residents.length !==0 ) : <img src={jarLoading} alt='loading'/> 
-                            ? residents.map(e=>{
-                                return  <button key={e} className="button-pages" onClick={() => setPage(e)}>{e+1}</button>
-                })           : <p>No hay Residentes por mostrar</p> } */}
-
                 {(residents) ?  newArray(sliceGroupResidents(residents)[1]).map(e => {
                     return <button key={e} className="button-pages" onClick={() => setPage(e)}>{e+1}</button>})
-                            : <img src={jarLoading} alt='loading'/>}
+                            : <img className="loader-button" src={jarLoading} alt='loading'/>}
             </div>
 
         </div>

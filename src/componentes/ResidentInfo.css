@@ -19,6 +19,7 @@
 
 .container-resident img{
     border-radius: 10rem;
+    border: thin solid black;
 }
 
 .container-resident-all{
@@ -71,4 +72,9 @@
 .loader{
     width: 200px;
     height: 200px;
+}
+
+.loader-button{
+    width: 20px;
+    height: 20px;
 }
