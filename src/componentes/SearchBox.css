@@ -1,0 +1,41 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(30, 15, 59);
+    width: 800px;
+    margin: auto;
+    border: thin solid black;
+    padding: 0 2rem;
+}
+
+.container label{
+    width: 50px;
+    height: 50px;
+}
+
+.image{
+    width: 45px;
+    height: 45px;
+}
+
+.button-search{
+    width: 70px;
+    height: 25px;
+}
+
+.input-search{
+    width: 700px;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: .5rem;
+}
