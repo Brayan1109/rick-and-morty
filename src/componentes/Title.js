@@ -1,4 +1,3 @@
-import { logDOM } from "@testing-library/react";
 import React from "react";
 import Ricklogo from "../assets/logos/Rick-And-Morty-Logo.png";
 
