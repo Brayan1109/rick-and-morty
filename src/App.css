@@ -45,7 +45,7 @@ img, section {
 .container-image-portada img{
   width: 100%;
   height: 40vh;
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 
@@ -71,11 +71,21 @@ img, section {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-title img{
+  width: 60%;
+  height: 150px;
+  position: absolute;
+  top: -20px;
+  left: 40vh;
 }
+
+.logo-animate img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 100px;
+  left: 45%;
+  margin: 0;
+}
+
+

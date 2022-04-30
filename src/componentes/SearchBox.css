@@ -16,6 +16,7 @@
     margin: auto;
     border: thin solid black;
     padding: 0 2rem;
+    border-radius: 1rem;
 }
 
 .container label{
@@ -29,13 +30,25 @@
 }
 
 .button-search{
-    width: 70px;
-    height: 25px;
+    width: 80px;
+    height: 35px;
+    border-radius: .3rem;
+    background-color: gray;
+    font-weight: bold;
+    
 }
 
 .input-search{
     width: 700px;
-    height: 25px;
+    height: 33px;
     border-radius: 10px;
     padding-left: .5rem;
+}
+
+.select{
+    width: 80px;
+    height: 28px;
+    background-color: gray;
+    border-radius: .2rem;
+    font-weight: bold;
 }
