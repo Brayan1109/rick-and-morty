@@ -1,10 +1,11 @@
 import React from "react";
 import Ricklogo from "../assets/logos/Rick-And-Morty-Logo.png";
+import "./title.css";
 
 const Title = () => {
   return (
     <div>
-      <img src={Ricklogo} alt="logo" />
+      <img className="animation-title" src={Ricklogo} alt="logo" />
     </div>
   );
 };

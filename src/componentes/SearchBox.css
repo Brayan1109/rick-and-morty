@@ -14,7 +14,7 @@
     background-color: rgb(30, 15, 59);
     width: 800px;
     margin: auto;
-    border: thin solid black;
+    border: thin solid white;
     padding: 0 2rem;
     border-radius: 1rem;
 }
@@ -35,6 +35,7 @@
     border-radius: .3rem;
     background-color: gray;
     font-weight: bold;
+    border: thin solid white;
     
 }
 
@@ -47,8 +48,10 @@
 
 .select{
     width: 80px;
-    height: 28px;
+    height: 32px;
     background-color: gray;
     border-radius: .2rem;
     font-weight: bold;
+    text-align: center;
+    border: thin solid white;
 }
