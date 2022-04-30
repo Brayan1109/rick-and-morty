@@ -17,6 +17,23 @@
     color: white;
 }
 
+@keyframes isMoveScale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }  
+}
+
+.isMove{
+    animation: isMoveScale 1s;
+    background-color: rgba(0,0,0,0.7);
+}
+
 .container-resident img{
     border-radius: 10rem;
     border: thin solid black;
