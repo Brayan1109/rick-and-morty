@@ -10,15 +10,25 @@ import AnimationImage from "./componentes/AnimationImage";
 
 function App() {
   let value = Math.floor(Math.random() * 126 - 1);
-  console.log(value);
   const [location, setLocation] = useState(value);
   const [data, setData] = useState({});
 
   useEffect(() => {
-    console.log(location);
-    getByType(location).then((req) => {
-      setData(req.data);
-    });
+    getByType(location)
+      .then((req) => {
+        if (!(typeof location === "number")) {
+          if (location.split("?").length > 1) {
+            setData(req.data.results[0]);
+          } else {
+            setData(req.data);
+          }
+        } else {
+          setData(req.data);
+        }
+      })
+      .catch((e) => {
+        window.alert("No hay coincidencias para la busqueda...");
+      });
   }, [location]);
 
   return (
@@ -38,7 +48,7 @@ function App() {
         <div className="container-opacity">
           <SearchBox location={location} setLocation={setLocation} />
           <LocationContainer data={data} />
-          <ResidentContainer residents={data.residents} />
+          <ResidentContainer residents={data} />
         </div>
       </section>
     </div>

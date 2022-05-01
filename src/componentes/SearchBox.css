@@ -36,6 +36,7 @@
     background-color: gray;
     font-weight: bold;
     border: thin solid white;
+    cursor: pointer;
     
 }
 
@@ -44,6 +45,9 @@
     height: 33px;
     border-radius: 10px;
     padding-left: .5rem;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .select{
@@ -54,4 +58,5 @@
     font-weight: bold;
     text-align: center;
     border: thin solid white;
+    cursor: pointer;
 }
